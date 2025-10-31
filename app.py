@@ -35,7 +35,7 @@ def main():
     rating_map = {"1": 1, "2": 2, "3": 3, "4": 4}
     
     if choice not in rating_map:
-        print("Invalid choice 😢")
+        print("Invalid choice ")
         return
     
     min_rating = rating_map[choice]
@@ -45,7 +45,7 @@ def main():
         print(f"\nMovies with rating >= {min_rating} ⭐:\n")
         print(tabulate(movies, headers=["Title", "Avg Rating", "Num Ratings"], tablefmt="fancy_grid"))
     else:
-        print("No movies found 😢")
+        print("No movies found. We're Sorry !!")
 
 if __name__ == "__main__":
     main()
